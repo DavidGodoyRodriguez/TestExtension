@@ -21,8 +21,7 @@ public class TestLimitsChecker {
 
     private static Test_Governor_Limits__mdt testGovernorLimits;
 
-    private static String CHECK_LIMITS_EXCEPTION_MESSAGE = 'Please check the following governor limits for your test to improve performance: {0}';
-    private class TestLimitsCheckerException extends Exception {}
+    private static String CHECK_LIMITS_EXCEPTION_MESSAGE = 'Please check your test {0} to improve the performance';
 
     public static void runChecks() {
         getGovernorLimitsConfiguration();
@@ -46,7 +45,7 @@ public class TestLimitsChecker {
     private static void assertGovernorLimits() {
         List<String> surpassedLimits = new List<String>();
         if (Limits.getCpuTime() > calculateMaximumAllowedLimit(Limits.getLimitCpuTime(), testGovernorLimits.CPU_Maximum_Limit__c)) {
-            surpassedLimits.add('CPU');
+            surpassedLimits.add('CPU usage');
         }
         if (Limits.getCallouts() > calculateMaximumAllowedLimit(Limits.getLimitCallouts(), testGovernorLimits.Callouts_Limit__c)) {
             surpassedLimits.add('Callouts');
@@ -88,7 +87,7 @@ public class TestLimitsChecker {
         if (!surpassedLimits.isEmpty()) {
             String surpassedLimitsString = String.join(surpassedLimits, ', ');
             List<String> formatterParameters = new List<String>{surpassedLimitsString};
-            throw new TestLimitsCheckerException(String.format(CHECK_LIMITS_EXCEPTION_MESSAGE, formatterParameters));
+            throw new TestExtension.LimitsException(String.format(CHECK_LIMITS_EXCEPTION_MESSAGE, formatterParameters));
         }
 
     }

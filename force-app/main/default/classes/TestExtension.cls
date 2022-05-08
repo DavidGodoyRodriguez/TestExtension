@@ -1,6 +1,8 @@
 
 @IsTest
 public class TestExtension {
+
+    public class LimitsException extends Exception {}
     
     public static void startTest() {
         Test.startTest();
