@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DML_Statements_Limit__c</fullName>
+    <description>Governor Limit for the Number of DML statements in tests.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Governor Limit for the Number of DML statements in tests.</inlineHelpText>
+    <label>DML Statements Limit</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Percent</type>
+</CustomField>

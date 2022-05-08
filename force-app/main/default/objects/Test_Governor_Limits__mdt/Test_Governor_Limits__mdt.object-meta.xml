@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This object defines governor limit requirements for your tests, allowing you to fine tune your tests efficiency.</description>
+    <label>Test Governor Limits</label>
+    <pluralLabel>Test Governor Limits</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

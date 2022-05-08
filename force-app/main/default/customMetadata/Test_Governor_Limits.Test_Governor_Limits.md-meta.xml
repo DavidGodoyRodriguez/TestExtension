@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Test Governor Limits</label>
+    <protected>false</protected>
+    <values>
+        <field>CPU_Maximum_Limit__c</field>
+        <value xsi:type="xsd:double">80.0</value>
+    </values>
+    <values>
+        <field>Callouts_Limit__c</field>
+        <value xsi:type="xsd:double">80.0</value>
+    </values>
+    <values>
+        <field>DML_Immediate_Limit__c</field>
+        <value xsi:type="xsd:double">80.0</value>
+    </values>
+    <values>
+        <field>DML_Rows_Limit__c</field>
+        <value xsi:type="xsd:double">80.0</value>
+    </values>
+    <values>
+        <field>DML_Statements_Limit__c</field>
+        <value xsi:type="xsd:double">80.0</value>
+    </values>
+    <values>
+        <field>Email_Invocations_Limit__c</field>
+        <value xsi:type="xsd:double">80.0</value>
+    </values>
+    <values>
+        <field>Future_Calls_Limit__c</field>
+        <value xsi:type="xsd:double">80.0</value>
+    </values>
+    <values>
+        <field>Heap_Maximum_Limit__c</field>
+        <value xsi:type="xsd:double">80.0</value>
+    </values>
+    <values>
+        <field>Mobile_Apex_Push_Calls_Limit__c</field>
+        <value xsi:type="xsd:double">80.0</value>
+    </values>
+    <values>
+        <field>Queueable_Jobs_Limit__c</field>
+        <value xsi:type="xsd:double">80.0</value>
+    </values>
+    <values>
+        <field>SOQL_Queries_Limit__c</field>
+        <value xsi:type="xsd:double">80.0</value>
+    </values>
+    <values>
+        <field>SOQL_Query_Rows_Limit__c</field>
+        <value xsi:type="xsd:double">80.0</value>
+    </values>
+    <values>
+        <field>SOSL_Queries_Limit__c</field>
+        <value xsi:type="xsd:double">80.0</value>
+    </values>
+</CustomMetadata>

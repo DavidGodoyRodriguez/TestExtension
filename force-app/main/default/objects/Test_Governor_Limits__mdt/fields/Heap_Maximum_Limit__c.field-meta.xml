@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Heap_Maximum_Limit__c</fullName>
+    <description>Governor Limit for the Maximum heap size in tests.</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Governor Limit for the Maximum heap size in tests.</inlineHelpText>
+    <label>Heap Maximum Limit</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Percent</type>
+</CustomField>
